@@ -6,8 +6,9 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
-//import org.apache.log4j.Logger;
-//import org.apache.log4j.PropertyConfigurator;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -17,6 +18,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
+
 
 import com.inetbanking.utilites.ReadConfig;
 
@@ -31,7 +33,7 @@ public class BaseClass {
 	public String username= RC.getusername();
 	public String password=RC.getpassword();
 	public static WebDriver driver;
-	//public static Logger logger;
+	public static Logger logger;
 	
 	@Parameters ("browser")
 	@BeforeClass
@@ -39,15 +41,19 @@ public class BaseClass {
 		//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+ "//Drivers//chromedriver.exe");
 		//System.setProperty("webdriver.chrome.driver", "C:\\Mini_Project\\inetBanking_V1\\Drivers\\chromedriver.exe");
 		//driver= new ChromeDriver();
-		if (browser.equals("firefox"))
+		if (browser.equals("edge"))
+		{
+			
+			System.setProperty("webdriver.edge.driver", RC.getedgepath());
+			driver=new EdgeDriver();
+			logger=Logger.getLogger("ebanking");
+			PropertyConfigurator.configure("log4j.properties");
+		
+		}
+		else if (browser.equals("firefox")) 
 		{
 			System.setProperty("webdriver.gecko.driver",RC.getfirefoxpath());
 			driver=new FirefoxDriver();
-		}
-		else if (browser.equals("edge")) 
-		{
-			System.setProperty("webdriver.edge.driver", RC.getedgepath());
-			driver=new EdgeDriver();
 			
 		}
 		

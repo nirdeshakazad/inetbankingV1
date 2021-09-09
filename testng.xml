@@ -8,10 +8,15 @@
 	<test thread-count="5" name="Test">
 		<parameter name="browser" value="edge"></parameter>
 		<classes>
-			<!--  <class name="com.inetbanking.testCases.TC_LoginTest_001"/> -->
-			<!--  <class name="com.inetbanking.testCases.TC_LoginDDT_002"/> -->
-			 <!--  <class name="com.inetbanking.testCases.TC_AddNewCustomer_003" /> -->
-			 <class name="com.inetbanking.testCases.TC_EditCustomer_004" />
+			 <!--  <class name="com.inetbanking.testCases.TC_LoginTest_001"/> -->
+			  <!--  <class name="com.inetbanking.testCases.TC_LoginDDT_002"/> -->
+			     <class name="com.inetbanking.testCases.TC_AddNewCustomer_003" />
+			  <class name="com.inetbanking.testCases.TC_EditCustomer_004" />  
+			  <class name="com.inetbanking.testCases.TC_AddNewAccount_005" /> 
+			  <class name="com.inetbanking.testCases.TC_AddDepositAmount_006"/> 
+			  <class name="com.inetbanking.testCases.TC_WithdrwalAmount_008"/>
+			  <class name="com.inetbanking.testCases.TC_MiniStatement_007"/> 
+			  
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

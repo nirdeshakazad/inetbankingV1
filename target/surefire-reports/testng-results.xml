@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="15470" started-at="2021-09-03T01:17:07 IST" finished-at="2021-09-03T01:17:22 IST">
+  <suite name="Suite" duration-ms="89832" started-at="2021-09-09T12:40:17 IST" finished-at="2021-09-09T12:41:47 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="15470" started-at="2021-09-03T01:17:07 IST" finished-at="2021-09-03T01:17:22 IST">
+    <test name="Test" duration-ms="89832" started-at="2021-09-09T12:40:17 IST" finished-at="2021-09-09T12:41:47 IST">
       <class name="com.inetbanking.testCases.TC_EditCustomer_004">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.inetbanking.testCases.TC_EditCustomer_004@68bbe345]" name="setup" is-config="true" duration-ms="6021" started-at="2021-09-03T01:17:07 IST" finished-at="2021-09-03T01:17:13 IST">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.inetbanking.testCases.TC_EditCustomer_004@694e1548]" name="setup" is-config="true" duration-ms="4256" started-at="2021-09-09T12:40:36 IST" finished-at="2021-09-09T12:40:40 IST">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,120 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="editCustomer()[pri:0, instance:com.inetbanking.testCases.TC_EditCustomer_004@68bbe345]" name="editCustomer" duration-ms="9200" started-at="2021-09-03T01:17:13 IST" finished-at="2021-09-03T01:17:22 IST">
+        <test-method status="PASS" signature="editCustomer()[pri:0, instance:com.inetbanking.testCases.TC_EditCustomer_004@694e1548]" name="editCustomer" duration-ms="11790" started-at="2021-09-09T12:40:40 IST" finished-at="2021-09-09T12:40:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editCustomer -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.inetbanking.testCases.TC_EditCustomer_004@68bbe345]" name="tearDown" is-config="true" duration-ms="73" started-at="2021-09-03T01:17:22 IST" finished-at="2021-09-03T01:17:22 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.inetbanking.testCases.TC_EditCustomer_004@694e1548]" name="tearDown" is-config="true" duration-ms="63" started-at="2021-09-09T12:40:52 IST" finished-at="2021-09-09T12:40:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.inetbanking.testCases.TC_EditCustomer_004 -->
+      <class name="com.inetbanking.testCases.TC_AddDepositAmount_006">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.inetbanking.testCases.TC_AddDepositAmount_006@131276c2]" name="setup" is-config="true" duration-ms="4353" started-at="2021-09-09T12:41:05 IST" finished-at="2021-09-09T12:41:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="DepositAmount()[pri:0, instance:com.inetbanking.testCases.TC_AddDepositAmount_006@131276c2]" name="DepositAmount" duration-ms="8850" started-at="2021-09-09T12:41:09 IST" finished-at="2021-09-09T12:41:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DepositAmount -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.inetbanking.testCases.TC_AddDepositAmount_006@131276c2]" name="tearDown" is-config="true" duration-ms="62" started-at="2021-09-09T12:41:18 IST" finished-at="2021-09-09T12:41:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.inetbanking.testCases.TC_AddDepositAmount_006 -->
+      <class name="com.inetbanking.testCases.TC_WithdrwalAmount_008">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.inetbanking.testCases.TC_WithdrwalAmount_008@26aa12dd]" name="setup" is-config="true" duration-ms="4061" started-at="2021-09-09T12:41:18 IST" finished-at="2021-09-09T12:41:22 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="amountWithdraw()[pri:0, instance:com.inetbanking.testCases.TC_WithdrwalAmount_008@26aa12dd]" name="amountWithdraw" duration-ms="9264" started-at="2021-09-09T12:41:22 IST" finished-at="2021-09-09T12:41:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amountWithdraw -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.inetbanking.testCases.TC_WithdrwalAmount_008@26aa12dd]" name="tearDown" is-config="true" duration-ms="68" started-at="2021-09-09T12:41:32 IST" finished-at="2021-09-09T12:41:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.inetbanking.testCases.TC_WithdrwalAmount_008 -->
+      <class name="com.inetbanking.testCases.TC_AddNewCustomer_003">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.inetbanking.testCases.TC_AddNewCustomer_003@5d76b067]" name="setup" is-config="true" duration-ms="4960" started-at="2021-09-09T12:40:17 IST" finished-at="2021-09-09T12:40:22 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="addNewCustomer()[pri:0, instance:com.inetbanking.testCases.TC_AddNewCustomer_003@5d76b067]" name="addNewCustomer" duration-ms="13491" started-at="2021-09-09T12:40:22 IST" finished-at="2021-09-09T12:40:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewCustomer -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.inetbanking.testCases.TC_AddNewCustomer_003@5d76b067]" name="tearDown" is-config="true" duration-ms="64" started-at="2021-09-09T12:40:36 IST" finished-at="2021-09-09T12:40:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.inetbanking.testCases.TC_AddNewCustomer_003 -->
+      <class name="com.inetbanking.testCases.TC_MiniStatement_007">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.inetbanking.testCases.TC_MiniStatement_007@3fd7a715]" name="setup" is-config="true" duration-ms="3992" started-at="2021-09-09T12:41:32 IST" finished-at="2021-09-09T12:41:36 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="minStatement()[pri:0, instance:com.inetbanking.testCases.TC_MiniStatement_007@3fd7a715]" name="minStatement" duration-ms="11015" started-at="2021-09-09T12:41:36 IST" finished-at="2021-09-09T12:41:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- minStatement -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.inetbanking.testCases.TC_MiniStatement_007@3fd7a715]" name="tearDown" is-config="true" duration-ms="78" started-at="2021-09-09T12:41:47 IST" finished-at="2021-09-09T12:41:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.inetbanking.testCases.TC_MiniStatement_007 -->
+      <class name="com.inetbanking.testCases.TC_AddNewAccount_005">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.inetbanking.testCases.TC_AddNewAccount_005@1c3a4799]" name="setup" is-config="true" duration-ms="4395" started-at="2021-09-09T12:40:52 IST" finished-at="2021-09-09T12:40:56 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="NewAccount()[pri:0, instance:com.inetbanking.testCases.TC_AddNewAccount_005@1c3a4799]" name="NewAccount" duration-ms="8821" started-at="2021-09-09T12:40:56 IST" finished-at="2021-09-09T12:41:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NewAccount -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.inetbanking.testCases.TC_AddNewAccount_005@1c3a4799]" name="tearDown" is-config="true" duration-ms="63" started-at="2021-09-09T12:41:05 IST" finished-at="2021-09-09T12:41:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.inetbanking.testCases.TC_AddNewAccount_005 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -28,6 +28,7 @@ public class TC_EditCustomer_004 extends BaseClass{
 		String editTelephone= randomNumber2();
 		editcust.custTelephone(editTelephone);
 		editcust.custsubmit();
+		Thread.sleep(3000);
 		
 		boolean res=driver.getPageSource().contains("Customer details updated Successfully!!!");
 		if (res==true)

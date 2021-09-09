@@ -13,14 +13,31 @@ import com.inetbanking.utilites.XLUtils;
 public class TC_LoginDDT_002 extends BaseClass
 {
 	@Test(dataProvider="LoginData")
-	public void loginDDT(String user, String pwd) throws InterruptedException{
+	public void loginDDT(String user, String pwd) throws InterruptedException, IOException{
 
 		LoginPage lp=new LoginPage(driver);
 		lp.setUserName(user);
+		logger.info("User Name Entered");
 		lp.setPassword(pwd);
+		logger.info("Password Entered");
 		lp.clickSubmit();
+		logger.info("Clicked Submit button");
 		
-		Thread.sleep(3000);
+		Thread.sleep(2000);
+		
+		//Validation
+		if (driver.getTitle().equals("Guru99 Bank Manager HomePage")) {
+			Assert.assertTrue(true);
+
+		}
+		else {
+			
+			Assert.assertFalse(false);
+			captureScreen(driver, "Login Failed");
+			
+		}
+
+	
 		
 		
 		// calling alert method

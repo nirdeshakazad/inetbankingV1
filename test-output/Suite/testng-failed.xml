@@ -7,13 +7,13 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="edge"/>
     <classes>
-      <class name="com.inetbanking.testCases.TC_EditCustomer_004">
+      <class name="com.inetbanking.testCases.TC_AddNewCustomer_003">
         <methods>
+          <include name="addNewCustomer"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="editCustomer"/>
         </methods>
-      </class> <!-- com.inetbanking.testCases.TC_EditCustomer_004 -->
+      </class> <!-- com.inetbanking.testCases.TC_AddNewCustomer_003 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
